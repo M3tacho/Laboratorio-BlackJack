@@ -22,8 +22,8 @@
     <div class="container-fluid text-center p-2">
         <div class="btn-group" role="group" aria-label="Ejemplo botones contornos" id="divBotones">
             <button id="btnNewGame" type="button" class="btn btn-success">Nuevo Juego</button>
-            <button id="btnNewCard" type="button" class="btn btn-primary">Pedir Carta</button>
-            <button id="btnStop" type="button" class="btn btn-danger">Detener</button>
+            <button id="btnNewCard" type="button" class="btn btn-primary" disabled="disabled">Pedir Carta</button>
+            <button id="btnStop" type="button" class="btn btn-danger" disabled="disabled">Detener</button>
         </div>
     </div>
     <!-- Botones de Control End-->
@@ -32,7 +32,7 @@
     <div class="container-fluid">
         <div class="col">
             <h1>Jugador - <small>0</small></h1>
-            <div id="jugador-cartas">
+            <div id="jugador-cartas" class="divCartas">
                 <!-- <img class="carta" src="assets/cartas/2H.png" alt=""> -->
             </div>
         </div>
@@ -43,7 +43,7 @@
     <div class="container-fluid">
         <div class="col">
             <h1>Computadora - <small>0</small></h1>
-            <div id="computadora-cartas">
+            <div id="computadora-cartas" class="divCartas">
                 <!-- <img class="carta" src="assets/cartas/4H.png" alt=""> -->
             </div>
         </div>
@@ -52,6 +52,9 @@
 
     <script src="assets/js/underscore-min.js"></script>
     <script src="assets/js/juego.js"></script>
+    <script>
+        miModulo.nuevoJuego();
+    </script>
 
 </body>
 
